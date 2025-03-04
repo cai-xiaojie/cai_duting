@@ -113,7 +113,7 @@ h3 {
 .right {
   padding: 40px;
   background-color: #e5e5e5;
-  width: 30%;
+  width: 30%; 
   border-radius: 50px;
 }
 
