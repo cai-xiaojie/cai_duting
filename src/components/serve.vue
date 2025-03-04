@@ -119,7 +119,7 @@ h3 {
 
 .right span {
   font-size: 15px;
-  font-weight: bold;
+  font-weight: bold; 
 }
 
 .card-container {
