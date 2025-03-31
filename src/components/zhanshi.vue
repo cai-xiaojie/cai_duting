@@ -114,4 +114,43 @@
 .card:hover .overlay {
   opacity: 1; /* 鼠标悬停时显示文字 */
 }
+@media (max-width: 1024px) {
+  .zhanshi {
+    padding: 30px 60px; /* 缩小左右内边距 */
+  }
+  
+  .card {
+    flex: 0 0 calc(33.333% - 20px); /* 平板端每行3个卡片 */
+  }
+}
+
+@media (max-width: 768px) {
+	.left {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+  .zhanshi {
+    padding: 20px; /* 手机端减少内边距 */
+  }
+
+  .card-content {
+    justify-content: center; /* 让卡片整体居中 */
+  }
+
+  .card {
+    flex: 0 0 calc(50% - 10px); /* 手机端每行2个卡片 */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 0 0 100%; /* 超小屏幕每行1个卡片 */
+  }
+
+  .overlay {
+    font-size: 14px; /* 文字适配小屏 */
+  }
+}
+
 </style>

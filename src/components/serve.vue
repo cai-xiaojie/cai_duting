@@ -128,7 +128,6 @@ h3 {
   gap: 20px;
 }
 
-
 .card {
   background-color: #fff;
   border: 1px solid #dbe4e9;
@@ -165,4 +164,55 @@ h3 {
   font-size: 0.8rem;
   color: #555;
 }
+
+/* 手机端适配 */
+@media (max-width: 768px) {
+  .serve {
+    padding: 20px;
+  }
+
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left, .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .icon-container img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
 </style>

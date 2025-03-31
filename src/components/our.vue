@@ -24,36 +24,80 @@
 
 <style scoped>
 .our {
-	background: url(../img/Contact Info.png) repeat fixed center;
-	padding: 50px 180px;
-	display: flex;
-	/* justify-content: space-between; */
+  background: url(../img/Contact Info.png) repeat fixed center;
+  padding: 50px 180px;
+  display: flex;
+  justify-content: space-between;
 }
-
 
 .left {
-	padding-bottom: 50px;
-	width: 45%;
+  padding-bottom: 50px;
+  width: 45%;
 }
+
 .left p {
-	padding: 0; 
-	margin: 0;
-	font-size: 2rem;
-	font-weight: 800;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 800;
 }
+
 .right {
-	display: flex;
+  display: flex;
+  justify-content: space-between;
 }
+
+.right-box1, .right-box2 {
+  width: 45%;
+}
+
 .right-box2 {
-	margin-left: 150px;
-}
-.right-box1 :nth-child(2){
-	margin: 0;
-	padding: 0;
+  margin-left: 30px;
 }
 
+.right-box1 p, .right-box2 p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
 
+.right-box1 :nth-child(2) {
+  margin: 0;
+  padding: 0;
+}
 
+/* 手机端适配 */
+@media (max-width: 768px) {
+  .our {
+    padding: 20px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .left, .right {
+    width: 100%;
+    text-align: center;
+  }
 
+  .right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-box1, .right-box2 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .left p {
+    font-size: 1.2rem;
+  }
+
+  .right-box1 p, .right-box2 p {
+    font-size: 1rem;
+  }
+
+  .right-box2 {
+    margin-left: 0;
+  }
+}
 </style>
