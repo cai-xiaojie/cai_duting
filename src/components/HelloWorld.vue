@@ -64,15 +64,15 @@ const scrollToSection = (sectionId) => {
 
 <style scoped>
 .image-header {
-  padding: 0;
-  position: relative;
-  width: 100vw;
+  width: 100%;
   height: 700px;
   background: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url('../img/head_banner2.jpg') no-repeat center center/cover;
-  box-sizing: border-box;
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/head_banner2.jpg') no-repeat center center;
+  background-size: cover;  /* 背景图铺满容器 */
+  background-attachment: fixed;  /* 固定背景，避免超出 */
 }
+
 
 .header-content {
   display: flex;

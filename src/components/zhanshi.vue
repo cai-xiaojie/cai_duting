@@ -130,6 +130,9 @@
 		flex-direction: column;
 		align-items: center;
 	}
+	.left h1 {
+		font-size: 2.3rem;
+	}
   .zhanshi {
     padding: 20px; /* 手机端减少内边距 */
   }

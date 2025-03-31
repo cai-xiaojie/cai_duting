@@ -176,6 +176,9 @@ h3 {
     align-items: center;
     text-align: center;
   }
+  .left h1 {
+	  font-size: 2.3rem;
+  }
 
   .left, .right {
     width: 100%;
